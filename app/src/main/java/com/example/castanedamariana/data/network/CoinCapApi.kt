@@ -22,7 +22,6 @@ class CoinCapApi {
         install(ContentNegotiation) {
             json(Json {
                 ignoreUnknownKeys = true
-                prettyPrint = true
                 isLenient = true
             })
         }
@@ -33,7 +32,7 @@ class CoinCapApi {
         }
 
         defaultRequest {
-            url("https://api.coincap.io/v3/")
+            url("https://rest.coincap.io/v3/")
             header("Authorization", "Bearer 6f8c2f757cc81e9950a05aeed8292abff853114ebc731977f3f5a580b1e9371a")
         }
     }
